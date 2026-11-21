@@ -1,0 +1,65 @@
+{
+  "format": 1,
+  "title": {
+    "en": "DSH Cloud Backup",
+    "zh": "云盘备份"
+  },
+  "description": {
+    "en": "Deduplicated backup of the DSH home directory to Aliyun Drive.",
+    "zh": "把 DSH 主目录按内容去重备份到阿里云盘。"
+  },
+  "metadata": {
+    "categories": {
+      "backup": {
+        "title": {
+          "en": "Backup & Restore",
+          "zh": "备份与还原"
+        }
+      }
+    }
+  },
+  "plugins": [
+    {
+      "name": "dsh-cloud-backup",
+      "title": {
+        "en": "Cloud Backup",
+        "zh": "云盘备份"
+      },
+      "description": {
+        "en": "Deduplicated backup of the whole DSH home to Aliyun Drive: sessions, configs, agent files and plugin data. Overwritten files keep one old copy, renamed workspaces are never replaced, and a QR scan restores the environment and its plugins on a new machine.",
+        "zh": "把整个 DSH 主目录按内容去重备份到阿里云盘：会话、配置、Agent 文件、插件数据一起走；被覆盖的文件自动留一份旧版，工作区改名不会被冲掉；扫码登录，换台电脑能把整套环境和插件装回来。"
+      },
+      "icon": "https://raw.githubusercontent.com/Maxc100/dsh-cloud-backup/main/assets/icon.png",
+      "author": "Maxc100",
+      "homepage": "https://github.com/Maxc100/dsh-cloud-backup",
+      "repository": {
+        "url": "https://github.com/Maxc100/dsh-cloud-backup"
+      },
+      "metadata": {
+        "category": "backup",
+        "keywords": [
+          "backup",
+          "restore",
+          "aliyundrive",
+          "dedup",
+          "sync"
+        ]
+      },
+      "dist-tags": {
+        "latest": "0.1.141"
+      },
+      "versions": [
+        {
+          "version": "0.1.141",
+          "publishTimestamp": 1795261377,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.0-0 <0.3.0-0"
+          }
+        }
+      ]
+    }
+  ]
+}
