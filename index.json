@@ -46,7 +46,7 @@
         ]
       },
       "dist-tags": {
-        "latest": "0.1.141"
+        "latest": "0.1.142"
       },
       "versions": [
         {
@@ -58,6 +58,10 @@
           "engines": {
             "dsh": ">=0.2.0-0 <0.3.0-0"
           }
+        },
+        {
+          "version": "0.1.142",
+          "publishTimestamp": 1795329748
         }
       ]
     }
