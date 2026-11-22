@@ -1,0 +1,56 @@
+{
+  "name": "dsh-cloud-backup",
+  "version": "0.1.142",
+  "engines": {
+    "dsh": ">=0.2.0-0 <0.3.0-0"
+  },
+  "description": "把整个 DSH 主目录按内容去重备份到阿里云盘：只上传变化的块，还原前可预览，插件随快照一起走。",
+  "type": "module",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublishOnly": "node scripts/publish-guard.mjs",
+    "release": "node scripts/publish-guard.mjs --release"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-locale",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ],
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "backup",
+    "aliyundrive",
+    "cloud",
+    "restore"
+  ],
+  "license": "GPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxc100/dsh-cloud-backup.git"
+  },
+  "homepage": "https://github.com/Maxc100/dsh-cloud-backup#readme",
+  "bugs": {
+    "url": "https://github.com/Maxc100/dsh-cloud-backup/issues"
+  },
+  "author": "Maxc100"
+}
