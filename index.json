@@ -46,7 +46,7 @@
         ]
       },
       "dist-tags": {
-        "latest": "0.1.144"
+        "latest": "0.1.145"
       },
       "versions": [
         {
@@ -70,6 +70,10 @@
         {
           "version": "0.1.144",
           "publishTimestamp": 1795506869
+        },
+        {
+          "version": "0.1.145",
+          "publishTimestamp": 1795607717
         }
       ]
     }
